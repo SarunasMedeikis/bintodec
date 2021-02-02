@@ -14,7 +14,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: #00b09b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #96c93d,
+    #00b09b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #96c93d,
+    #00b09b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +35,14 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style inputs */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
